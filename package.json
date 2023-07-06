@@ -4,6 +4,7 @@
   "description": "\u001b[A\u001b[BOue first project of Node Js",
   "main": "index.html",
   "scripts": {
+    "dev": "lite-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://bitbucket.org/joseluisn_code/guia-hoteles/issues"
   },
-  "homepage": "https://bitbucket.org/joseluisn_code/guia-hoteles#readme"
+  "homepage": "https://bitbucket.org/joseluisn_code/guia-hoteles#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
 }
