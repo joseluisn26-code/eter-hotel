@@ -7,10 +7,15 @@
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <title>Guia hoteles</title>
+    <link
+      href="node_modules/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Éter Hotel</title>
   </head>
   <body>
-
     <div
       class="jumbotron jumbotron-fluid p-5 mb-4 bg-success text-white d-flex justify-content-center align-items-center"
     >
@@ -47,8 +52,10 @@
             sea inolvidable.
           </p>
         </div>
-        <div class="col-sm-4">
-          <div class="card mb-4">
+      </div>
+      <div class="d-flex flex-wrap">
+        <div class="col-sm-3 mb-3 p-3">
+          <div class="card">
             <img
               src="https://via.placeholder.com/200x200"
               class="card-img-top"
@@ -62,12 +69,14 @@
                 revitalizante, sumérgete en nuestras piscinas termales y
                 descubre el equilibrio perfecto entre mente y cuerpo.
               </p>
-              <a href="#" class="btn btn-success">Ver más</a>
+              <div class="d-flex justify-content-center">
+                <a href="#" class="btn btn-success ">Ver más</a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-sm-4">
-          <div class="card mb-4">
+        <div class="col-sm-3 mb-3 p-3">
+          <div class="card">
             <img
               src="https://via.placeholder.com/200x200"
               class="card-img-top"
@@ -81,12 +90,35 @@
                 gourmet elaborados con ingredientes frescos y de la más alta
                 calidad. Disfruta de una experiencia culinaria inolvidable.
               </p>
-              <a href="#" class="btn btn-success">Ver más</a>
+              <div class="d-flex justify-content-center">
+                <a href="#" class="btn btn-success ">Ver más</a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-sm-4">
-          <div class="card mb-4">
+        <div class="col-sm-3 mb-3 p-3">
+          <div class="card">
+            <img
+              src="https://via.placeholder.com/200x200"
+              class="card-img-top"
+              alt="Producto 3"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Experiencia de Deportes Acuáticos</h5>
+              <p class="card-text">
+                Sumérgete en una emocionante experiencia de deportes acuáticos
+                en nuestras hermosas playas. Desde surf hasta snorkel y buceo,
+                ofrecemos una variedad de actividades emocionantes para todos
+                los niveles de habilidad.
+              </p>
+              <div class="d-flex justify-content-center">
+                <a href="#" class="btn btn-success ">Ver más</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 mb-3 p-3">
+          <div class="card">
             <img
               src="https://via.placeholder.com/200x200"
               class="card-img-top"
@@ -100,12 +132,68 @@
                 más emblemáticos, conocerás la historia y cultura del lugar, y
                 vivirás una experiencia enriquecedora.
               </p>
-              <a href="#" class="btn btn-success">Ver más</a>
+              <div class="d-flex justify-content-center">
+                <a href="#" class="btn btn-success ">Ver más</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <footer class="footer bg-success">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 d-flex flex-column">
+            <h4>Redes sociales</h4>
+            <ul class="list-unstyled">
+              <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="bi bi-facebook"></i>
+                  Facebook
+                </a>
+              </li>
+              <li>
+                <a href="https://www.twitter.com/" target="_blank">
+                  <i class="bi bi-twitter"></i>
+                  Twitter
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                  <i class="bi bi-instagram"></i>
+                  Instagram
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/" target="_blank">
+                  <i class="bi bi-youtube"></i>
+                  YouTube
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-4">
+            <h4>Contacto</h4>
+            <address>
+                <i class="bi bi-map"></i> Cll 10b # 81f -20, Bogotá, Colombia
+              <br />
+              <i class="bi bi-phone"></i> +573123521497
+              <br />
+              <i class="bi bi-envelope-at"></i> jonovoan@poligran.edu.co
+            </address>
+          </div>
+          <div class="col-sm-4 d-flex align-items-start flex-column">
+            <h4>Enlaces</h4>
+            <ul class="list-unstyled mt-auto p-2">
+              <li><a href="#">Nosotros</a></li>
+              <li><a href="#">Planes</a></li>
+              <li><a href="#">Términos y condiciones</a></li>
+              <li><a href="#">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   </body>
