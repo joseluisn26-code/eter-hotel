@@ -1,3 +1,7 @@
+.home-icon {
+  padding: 10px;
+}
+
 .jumbotron {
   margin-top: 30px;
 }
@@ -5,6 +9,18 @@
   color: #0e0d0d;
   font-size: 24px;
   margin-top: 12px;
+}
+.breadcrumb {
+  background-color: #ccc;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #0e0d0d;
+}
+
+.breadcrumb-item.active a {
+  color: #28a745;
 }
 
 .card {
@@ -42,4 +58,8 @@
 
 .footer a:active {
   color: #e91e63; /* Color para presionado */
+}
+
+#nosotros {
+  height: 80vh;
 }

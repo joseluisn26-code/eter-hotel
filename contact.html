@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="node_modules/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Éter Hotel</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#">Hotel<i class="bi bi-building-fill home-icon"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="./about.html" class="nav-link active">Nosotros</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Precios</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Terminos y condiciones</a></li>
+          <li class="nav-item"><a href="./contact.html" class="nav-link active">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <div class="container p-5 mb-4" id="nosotros">
+      <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="mt-4">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item" aria-current="page"><a href="./index.html">Home</a></li>
+          <li class="breadcrumb-item" aria-current="page"><a href="./about.html">About</a></li>
+          <li class="breadcrumb-item active"><a href="./contact.html">Contact</a></li>
+        </ol>
+      </nav>
+      
+      <h1>Dejanos tu comentario</h1>
+      <form>
+
+        <div class="row mb-4">
+          <div class="col-sm-6">
+            <div class="form-outline">
+              <label class="form-label" for="nombre">Nombre</label>
+              <input type="text" id="nombre" class="form-control" placeholder="Ingrese su nombre" required/>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-outline">
+              <label class="form-label" for="apellido">Apellido</label>
+              <input type="text" id="apellido" class="form-control" placeholder="Ingrese su apellido" required/>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Email input -->
+        <div class="form-outline mb-4">
+          <label class="form-label" for="email">Email</label>
+          <input type="email" id="email" class="form-control" placeholder="Ingrese su email" required />
+        </div>
+        
+        <!-- Domicilio input -->
+        <div class="row mb-4">
+          <div class="col-sm-9">
+            <div class="form-outline">
+              <label class="form-label" for="Direccion">Dirección</label>
+              <input type="text" id="Direccion" class="form-control" placeholder="Ingrese su Direccion" required/>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="form-outline">
+              <label class="form-label" for="ciudad">Ciudad</label>
+              <select id="ciudad" class="form-control">
+                <option value="Ingrese" disabled selected>Ingrese municipio</option>
+                <option value="bogota">Bogota</option>
+                <option value="medellin">Medellin</option>
+                <option value="cali">Cali</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 mb-4">
+          <label for="comentario">Comentario</label>
+          <textarea id="comentario" class="form-control" rows="5"></textarea>
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="check">
+            <label class="form-check-label" for="check">Quiero que me contacten</label>
+          </div>
+        </div>
+        <!-- Submit button -->
+        <button type="submit" class="btn btn-success btn-block mb-4">Enviar</button>
+      
+      </form>
+      
+    </div>
+    <footer class="footer bg-success">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 d-flex flex-column">
+            <h4>Redes sociales</h4>
+            <ul class="list-unstyled">
+              <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="bi bi-facebook"></i>
+                  Facebook
+                </a>
+              </li>
+              <li>
+                <a href="https://www.twitter.com/" target="_blank">
+                  <i class="bi bi-twitter"></i>
+                  Twitter
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                  <i class="bi bi-instagram"></i>
+                  Instagram
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/" target="_blank">
+                  <i class="bi bi-youtube"></i>
+                  YouTube
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-4">
+            <h4>Contacto</h4>
+            <address>
+                <i class="bi bi-map"></i> Cll 10b # 81f -20, Bogotá, Colombia
+              <br />
+              <i class="bi bi-phone"></i> +573123521497
+              <br />
+              <i class="bi bi-envelope-at"></i> jonovoan@poligran.edu.co
+            </address>
+          </div>
+          <div class="col-sm-4 d-flex align-items-start flex-column">
+            <h4>Enlaces</h4>
+            <ul class="list-unstyled mt-auto p-2">
+              <li><a href="#">Nosotros</a></li>
+              <li><a href="#">Planes</a></li>
+              <li><a href="#">Términos y condiciones</a></li>
+              <li><a href="#">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
