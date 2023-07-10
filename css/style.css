@@ -57,9 +57,13 @@
 }
 
 .footer a:active {
-  color: #e91e63; /* Color para presionado */
+  color: #ccc;
 }
 
 #nosotros {
   height: 80vh;
+}
+
+.table-price {
+  height: 45vh;
 }

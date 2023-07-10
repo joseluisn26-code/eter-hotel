@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="node_modules/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Éter Hotel</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#">
+        Hotel
+        <i class="bi bi-building-fill home-icon"></i>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a href="./index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="./about.html" class="nav-link active">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a href="./price.html" class="nav-link">Precios</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Terminos y condiciones</a>
+          </li>
+          <li class="nav-item">
+            <a href="./contact.html" class="nav-link">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div
+      class="jumbotron jumbotron-fluid p-5 mb-4 bg-success text-white d-flex justify-content-center align-items-center"
+    >
+      <div class="container-fluid text-center">
+        <h1 class="display-4">Éter Hotel</h1>
+        <p class="lead">Donde la elegancia y el confort se fusionan</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item" aria-current="page">
+            <a href="./index.html">Home</a>
+          </li>
+          <li class="breadcrumb-item"><a href="./about.html">About</a></li>
+          <li class="breadcrumb-item active">
+            <a href="./price.html">Price</a>
+          </li>
+          <li class="breadcrumb-item" aria-current="page">
+            <a href="./contact.html">Contact</a>
+          </li>
+        </ol>
+      </nav>
+      <div class="table-responsive">
+        <table class="table table-warning table-striped table-price">
+          <thead class="thead-dark">
+            <th>Tipo de plan</th>
+            <th>Detalle</th>
+            <th>Happy hour</th>
+            <th>Valor</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Masaje revitalizante</td>
+              <td>
+                Disfruta de un completo paquete de spa y relajación en nuestro
+                exclusivo centro de bienestar
+              </td>
+              <td>03:00 pm - 04:00 pm</td>
+              <td>$ 300 us</td>
+            </tr>
+            <tr>
+              <td>Experiencia gastronómica</td>
+              <td>
+                Déjate deleitar por nuestra exquisita oferta gastronómica
+                ofrecida por nuestro talentoso equipo de chefs
+              </td>
+              <td>Surf snorkel y buceo</td>
+              <td>$ 200 us</td>
+            </tr>
+            <tr>
+              <td>Experiencia deportes acuáticos</td>
+              <td>
+                Surf hasta snorkel y buceo,ofrecemos una variedad de actividades
+                emocionantes para todos los niveles de habilidad
+              </td>
+              <td>8:00 am - 10:00 am</td>
+              <td>$ 500 us</td>
+            </tr>
+            <tr>
+              <td>Tour guiado</td>
+              <td>
+                Descubre los encantos de nuestra ciudad con nuestro tour guiado
+                acompañado por expertos guías locales
+              </td>
+              <td>07:00 am - 07:30 am</td>
+              <td>$ 400 us</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <footer class="footer bg-success">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 d-flex flex-column">
+            <h4>Redes sociales</h4>
+            <ul class="list-unstyled">
+              <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                  <i class="bi bi-facebook"></i>
+                  Facebook
+                </a>
+              </li>
+              <li>
+                <a href="https://www.twitter.com/" target="_blank">
+                  <i class="bi bi-twitter"></i>
+                  Twitter
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                  <i class="bi bi-instagram"></i>
+                  Instagram
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/" target="_blank">
+                  <i class="bi bi-youtube"></i>
+                  YouTube
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-4">
+            <h4>Contacto</h4>
+            <address>
+              <i class="bi bi-map"></i>
+              Cll 10b # 81f -20, Bogotá, Colombia
+              <br />
+              <i class="bi bi-phone"></i>
+              +573123521497
+              <br />
+              <i class="bi bi-envelope-at"></i>
+              jonovoan@poligran.edu.co
+            </address>
+          </div>
+          <div class="col-sm-4 d-flex align-items-start flex-column">
+            <h4>Enlaces</h4>
+            <ul class="list-unstyled mt-auto p-2">
+              <li><a href="#">Nosotros</a></li>
+              <li><a href="#">Planes</a></li>
+              <li><a href="#">Términos y condiciones</a></li>
+              <li><a href="#">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
