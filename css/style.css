@@ -73,3 +73,8 @@
 .table-price {
   height: 45vh;
 }
+
+.accordion-button:not(.collapsed)[aria-expanded="true"] {
+  background-color: #198754;
+  color: #fff; /* Cambia el color del texto aquí según tus preferencias */
+}
