@@ -76,54 +76,113 @@
           </li>
         </ol>
       </nav>
-      <div class="table-responsive">
-        <table class="table table-warning table-striped table-price">
-          <thead class="thead-dark">
-            <th>Tipo de plan</th>
-            <th>Detalle</th>
-            <th>Happy hour</th>
-            <th>Valor</th>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Masaje revitalizante</td>
-              <td>
-                Disfruta de un completo paquete de spa y relajación en nuestro
-                exclusivo centro de bienestar
-              </td>
-              <td>03:00 pm - 04:00 pm</td>
-              <td><span class="badge text-bg-success">$ 300 us</span></td>
-            </tr>
-            <tr>
-              <td>Experiencia gastronómica</td>
-              <td>
-                Déjate deleitar por nuestra exquisita oferta gastronómica
-                ofrecida por nuestro talentoso equipo de chefs
-              </td>
-              <td>Surf snorkel y buceo</td>
-              <td><span class="badge text-bg-success">$ 200 us</span></td>
-            </tr>
-            <tr>
-              <td>Experiencia deportes acuáticos</td>
-              <td>
-                Surf hasta snorkel y buceo,ofrecemos una variedad de actividades
-                emocionantes para todos los niveles de habilidad
-              </td>
-              <td>8:00 am - 10:00 am</td>
-              <td><span class="badge text-bg-success">$ 500 us</span></td>
-            </tr>
-            <tr>
-              <td>Tour guiado</td>
-              <td>
-                Descubre los encantos de nuestra ciudad con nuestro tour guiado
-                acompañado por expertos guías locales
-              </td>
-              <td>07:00 am - 07:30 am</td>
-              <td><span class="badge text-bg-success">$ 400 us</span></td>
-            </tr>
-          </tbody>
-        </table>
+
+      <!-- Pills -->
+
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item p-1" role="presentation">
+          <button class="nav-link bg-success text-bg-success active" id="pills-plans-tab" data-bs-toggle="pill" data-bs-target="#pills-plans" type="button" role="tab" aria-controls="pills-plans" aria-selected="true"><i class="bi bi-bookmarks-fill"></i> Planes</button>
+        </li>
+        <li class="nav-item p-1" role="presentation">
+          <button class="nav-link bg-success text-bg-success" id="pills-payment-tab" data-bs-toggle="pill" data-bs-target="#pills-payment" type="button" role="tab" aria-controls="pills-payment" aria-selected="false"><i class="bi bi-credit-card-2-back-fill"></i> Formas de pago</button>
+        </li>
+      </ul>
+      <div class="tab-content " id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-plans" role="tabpanel" aria-labelledby="pills-plans-tab" tabindex="0">
+          <div class="table-responsive">
+            <table class="table table-warning table-striped table-price">
+              <thead class="thead-dark">
+                <th>Tipo de plan</th>
+                <th>Detalle</th>
+                <th>Happy hour</th>
+                <th>Valor</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Masaje revitalizante</td>
+                  <td>
+                    Disfruta de un completo paquete de spa y relajación en nuestro
+                    exclusivo centro de bienestar
+                  </td>
+                  <td>03:00 pm - 04:00 pm</td>
+                  <td><span class="badge text-bg-success">$ 300 us</span></td>
+                </tr>
+                <tr>
+                  <td>Experiencia gastronómica</td>
+                  <td>
+                    Déjate deleitar por nuestra exquisita oferta gastronómica
+                    ofrecida por nuestro talentoso equipo de chefs
+                  </td>
+                  <td>Surf snorkel y buceo</td>
+                  <td><span class="badge text-bg-success">$ 200 us</span></td>
+                </tr>
+                <tr>
+                  <td>Experiencia deportes acuáticos</td>
+                  <td>
+                    Surf hasta snorkel y buceo,ofrecemos una variedad de actividades
+                    emocionantes para todos los niveles de habilidad
+                  </td>
+                  <td>8:00 am - 10:00 am</td>
+                  <td><span class="badge text-bg-success">$ 500 us</span></td>
+                </tr>
+                <tr>
+                  <td>Tour guiado</td>
+                  <td>
+                    Descubre los encantos de nuestra ciudad con nuestro tour guiado
+                    acompañado por expertos guías locales
+                  </td>
+                  <td>07:00 am - 07:30 am</td>
+                  <td><span class="badge text-bg-success">$ 400 us</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-payment" role="tabpanel" aria-labelledby="pills-payment-tab" tabindex="0"><div class="row row-cols-1 row-cols-md-3 g-4 p-2">
+          <div class="col">
+            <div class="card h-100">
+              <img src="./public/images/credit-cards.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Pago con tarjeta de credito y debito</h5>
+                <p class="card-text">Puedes pagar con las siguientes tarjetas de crédito o débito:
+                  <ul>
+                    <li>American Express</li>
+                    <li>Mastercard</li>
+                    <li>Visa</li>
+                  </ul>
+                  <small class="text-muted">Contamos con una gran gama de aliados para hacer facil las cosas y con los mejores estandares de seguridad</small></p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="./public/images/ecommerce.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Transferencia electronica o pago por pse</h5>
+                <p class="card-text">En esta era digital es importante para nosotros contar con alianzas estrategicas por eso puedes pagar con tu banco de confianza</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="./public/images/operator.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Facturación del operador de telefonía celular</h5>
+                <p class="card-text">Con algunos dispositivos móviles y planes de servicio, puedes cargar compras en la factura de tu operador.
+                  <ul>
+                    <li>T-Mobile</li>
+                    <li>Claro</li>
+                    <li>Movistar</li>
+                  </ul>                      
+                  <small class="text-muted">Cuando hagas una compra, se mostrará el cargo en la cuenta de tu operador después de 15 minutos.</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      </div>
+      
+
     </div>
     <footer class="footer bg-success">
       <div class="container">
