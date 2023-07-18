@@ -52,7 +52,8 @@
     </nav>
 
     <div
-      class="jumbotron jumbotron-fluid p-5 mb-4 bg-success text-white d-flex justify-content-center align-items-center" id="jumbotronHeader"
+      class="jumbotron jumbotron-fluid p-5 mb-4 bg-success text-white d-flex justify-content-center align-items-center"
+      id="jumbotronHeader"
     >
       <div class="container-fluid text-center">
         <h1 class="display-4">Éter Hotel</h1>
@@ -129,7 +130,7 @@
       </div>
       <div class="row">
         <div class="col-sm-3 mb-3 p-3">
-          <div class="card custom-card">
+          <div class="card custom-card h-100">
             <img
               src="./public/images/spa.jpg"
               class="card-img-top"
@@ -137,20 +138,29 @@
             />
             <div class="card-body">
               <h5 class="card-title">Paquete de Spa y Relajación</h5>
-              <p class="c">
+              <p class="card-text">
                 Disfruta de un completo paquete de spa y relajación en nuestro
                 exclusivo centro de bienestar. Relájate con un masaje
                 revitalizante, sumérgete en nuestras piscinas termales y
                 descubre el equilibrio perfecto entre mente y cuerpo.
               </p>
               <div class="d-flex justify-content-center">
-                <a href="#" class="btn btn-success">Ver más</a>
+                <a
+                  data-bs-toggle="tooltip"
+                  id="example"
+                  data-bs-placement="bottom"
+                  data-bs-title="Proximamente nuestros mejores planes para ti"
+                  href="#"
+                  class="btn btn-success example-popover"
+                >
+                  Ver más
+                </a>
               </div>
             </div>
           </div>
         </div>
         <div class="col-sm-3 mb-3 p-3">
-          <div class="card custom-card">
+          <div class="card custom-card h-100">
             <img
               src="./public/images/food.jpg"
               class="card-img-top"
@@ -165,13 +175,22 @@
                 calidad. Disfruta de una experiencia culinaria inolvidable.
               </p>
               <div class="d-flex justify-content-center">
-                <a href="#" class="btn btn-success">Ver más</a>
+                <a
+                  data-bs-toggle="tooltip"
+                  id="example"
+                  data-bs-placement="bottom"
+                  data-bs-title="Nuestros mejores platos para ti y tu familia"
+                  href="#"
+                  class="btn btn-success"
+                >
+                  Ver más
+                </a>
               </div>
             </div>
           </div>
         </div>
         <div class="col-sm-3 mb-3 p-3">
-          <div class="card custom-card">
+          <div class="card custom-card h-100">
             <img
               src="./public/images/sport.jpg"
               class="card-img-top"
@@ -186,13 +205,15 @@
                 de habilidad.
               </p>
               <div class="d-flex justify-content-center">
-                <a href="#" class="btn btn-success">Ver más</a>
+                <a data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                data-bs-title="Deportes acuaticos en un solo lugar" href="#" class="btn btn-success">Ver más</a>
               </div>
             </div>
           </div>
         </div>
         <div class="col-sm-3 mb-3 p-3">
-          <div class="card custom-card">
+          <div class="card custom-card h-100">
             <img
               src="./public/images/tour.jpg"
               class="card-img-top"
@@ -207,7 +228,9 @@
                 experiencia enriquecedora.
               </p>
               <div class="d-flex justify-content-center">
-                <a href="#" class="btn btn-success">Ver más</a>
+                <a data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                data-bs-title="Conoce los mejores lugares junto a nosotros" href="#" class="btn btn-success">Ver más</a>
               </div>
             </div>
           </div>
@@ -216,73 +239,148 @@
 
       <div class="jumbotron p-3 subscribe">
         <h1 class="display-4">Suscríbete a nuestro boletín de noticias</h1>
-        <p class="lead">Recibe las últimas noticias, ofertas especiales y actualizaciones de nuestro hotel directamente en tu bandeja de entrada.</p>
-        <hr class="my-4">
-        <button class="btn btn-success btn-lg" data-bs-toggle="modal" href="#subscriptionModal" role="button">Suscribirse</button>
+        <p class="lead">
+          Recibe las últimas noticias, ofertas especiales y actualizaciones de
+          nuestro hotel directamente en tu bandeja de entrada.
+        </p>
+        <hr class="my-4" />
+        <button
+          class="btn btn-success btn-lg"
+          data-bs-toggle="modal"
+          href="#subscriptionModal"
+          role="button"
+        >
+          Suscribirse
+        </button>
       </div>
+      
     </div>
 
-<!-- Modal Home-->
-<div class="modal fade" id="miModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content text-bg-success">
-      <div class="modal-body">
-        <div class="row">
-          <div class="col-md-4 d-flex justify-content-center align-items-center">
-            <div class="w-100">
-              <img src="./public/images/spa.jpg" class="img-fluid mx-auto d-block" alt="spa">
-            </div>
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <div class="modal-header justify-content-end">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <!-- Modal Home-->
+    <div
+      class="modal fade"
+      id="miModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-bg-success">
+          <div class="modal-body">
+            <div class="row">
+              <div
+                class="col-md-4 d-flex justify-content-center align-items-center"
+              >
+                <div class="w-100">
+                  <img
+                    src="./public/images/spa.jpg"
+                    class="img-fluid mx-auto d-block"
+                    alt="spa"
+                  />
+                </div>
               </div>
-              <h5 class="card-title">Étel Hotel</h5>
-              <p class="card-text">Estamos de aniversario y los regalos son para ti, nuestro plan de masaje 5 estrellas con su mejor precio.</p>
-              <p class="card-text"><small class="text-muted text-bg-warning">Promoción solo por hoy </small><span class="badge text-bg-secondary">$ 400 us</span></p>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <div class="modal-header justify-content-end">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <h5 class="card-title">Étel Hotel</h5>
+                  <p class="card-text">
+                    Estamos de aniversario y los regalos son para ti, nuestro
+                    plan de masaje 5 estrellas con su mejor precio.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-muted text-bg-warning">
+                      Promoción solo por hoy
+                    </small>
+                    <span class="badge text-bg-secondary">$ 400 us</span>
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
 
-<!-- Modal subscribe boletines -->
-<div class="modal fade" id="subscriptionModal" tabindex="-1" aria-labelledby="subscriptionModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="subscriptionModalLabel">Suscribete a nuestro boletín de noticias</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-      </div>
-      <div class="modal-body">
-        <form class="subscription-form">
-          <div class="mb-3">
-            <label for="name" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="name" placeholder="Ingresa tu nombre" required>
+    <!-- Modal subscribe boletines -->
+    <div
+      class="modal fade"
+      id="subscriptionModal"
+      tabindex="-1"
+      aria-labelledby="subscriptionModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="subscriptionModalLabel">
+              Suscribete a nuestro boletín de noticias
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Cerrar"
+            ></button>
           </div>
-          <div class="mb-3">
-            <label for="emailInput" class="form-label">Correo electrónico</label>
-            <input type="email" class="form-control" id="emailInput" placeholder="Ingresa tu correo electrónico" required>
+          <div class="modal-body">
+            <form class="subscription-form">
+              <div class="mb-3">
+                <label for="name" class="form-label">Nombre</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Ingresa tu nombre"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="emailInput" class="form-label">
+                  Correo electrónico
+                </label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="emailInput"
+                  placeholder="Ingresa tu correo electrónico"
+                  required
+                />
+              </div>
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="check"
+                  required
+                />
+                <label class="form-check-label" for="check">
+                  Autorizo a que me contacten
+                </label>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Cerrar
+                </button>
+                <button type="submit" class="btn btn-success">
+                  Suscribirse
+                </button>
+              </div>
+            </form>
           </div>
-          <div class="form-check">
-              <input type="checkbox" class="form-check-input" id="check" required>
-              <label class="form-check-label" for="check">Autorizo a que me contacten</label>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            <button type="submit" class="btn btn-success">Suscribirse</button>
-          </div>
-        </form>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-
-
-
 
     <footer class="footer bg-success">
       <div class="container">
@@ -341,7 +439,20 @@
         </div>
       </div>
     </footer>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
     <script src="js/modal.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var tooltipElements = document.querySelectorAll(
+          '[data-bs-toggle="tooltip"]',
+        )
+        tooltipElements.forEach(function (element) {
+          new bootstrap.Tooltip(element)
+        })
+      })
+    </script>
   </body>
 </html>
